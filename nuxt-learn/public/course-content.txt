@@ -1,0 +1,24 @@
+Course Content for learning Nuxt 3
+Tutorial Video Link - https://www.youtube.com/watch?v=fTPCKnZZ2dk
+
+Course Details and Points - 
+1. Create an App - Completed
+2. Pages and Routing
+3. Components
+4. Layouts
+5. Images and Assets
+6. Composables
+7. Plugins
+8. Middlewares
+9. Modules
+10. State Management
+11. SSR, SWR and Hybrid
+12. Server
+13. Nitro
+14. useFetch and useLazyFetch
+15. useAsyncData
+16. SEO and Metas
+17. Lifecycle Hooks
+18. Config
+19. Nuxt Content
+20. Fullstack App docs + API
