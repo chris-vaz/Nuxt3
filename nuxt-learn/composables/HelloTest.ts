@@ -1,5 +1,5 @@
 // ~/composables/HelloTest.ts
-
+import { ref } from 'vue';
 export function useHelloTest() {
     // A simple state variable with a default message
     const message = ref<string>("Hello from HelloTest composable!");
