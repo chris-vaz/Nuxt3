@@ -1,4 +1,17 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "@types/node",
+      "@nuxt/types"
+    ]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "plugins/**/*.ts",
+    "middleware/**/*.ts",  // Ensure middleware is included
+    "pages/**/*.ts",
+    "components/**/*.ts"
+  ]
 }
