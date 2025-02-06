@@ -6,10 +6,10 @@ Course Details and Points -
 2. Pages and Routing - Completed
 3. Components - Completed
 4. Layouts - Completed
-5. Images and Assets
-6. Composables
-7. Plugins
-8. Middlewares
+5. Images and Assets - Completed
+6. Composables - Completed
+7. Plugins - Completed
+8. Middlewares 
 9. Modules
 10. State Management
 11. SSR, SWR and Hybrid
