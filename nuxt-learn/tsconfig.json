@@ -1,17 +1,31 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
+  // Extend Nuxt's default TypeScript configuration
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": [
-      "@types/node",
-      "@nuxt/types"
-    ]
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["@types/node", "nuxt"],
+    "paths": {
+      "#app": ["./node_modules/nuxt/dist/app"],
+      "#build": ["./node_modules/nuxt/dist/build"]
+    }
   },
   "include": [
     "nuxt.config.ts",
     "plugins/**/*.ts",
-    "middleware/**/*.ts",  // Ensure middleware is included
+    "middleware/**/*.ts",
     "pages/**/*.ts",
-    "components/**/*.ts"
-  ]
+    "components/**/*.ts",
+    "composables/**/*.ts", 
+    "layouts/**/*.ts",
+    "utils/**/*.ts",
+    "server/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
 }
