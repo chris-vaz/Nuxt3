@@ -10,10 +10,18 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["@types/node", "nuxt"],
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/composition-api",
+      "nuxt"
+    ],
     "paths": {
-      "#app": ["./node_modules/nuxt/dist/app"],
-      "#build": ["./node_modules/nuxt/dist/build"]
+      "#app": [
+        "./node_modules/nuxt/dist/app"
+      ],
+      "#build": [
+        "./node_modules/nuxt/dist/build"
+      ]
     }
   },
   "include": [
@@ -22,10 +30,12 @@
     "middleware/**/*.ts",
     "pages/**/*.ts",
     "components/**/*.ts",
-    "composables/**/*.ts", 
+    "composables/**/*.ts",
     "layouts/**/*.ts",
     "utils/**/*.ts",
     "server/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
